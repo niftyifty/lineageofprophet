@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-container, .dropzone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.name-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    background-color: #fff;
+}
+
+.dropzone {
+    border: 2px dashed #aaa;
+    padding: 20px;
+    width: 300px;
+    min-height: 50px;
+    background-color: #e9e9e9;
+}
+
+.name {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+.name.prophet {
+    background-color: #FFD700;
+    color: black;
+    font-weight: bold;
+}
+
+.name.correct {
+    border: 2px solid darkgreen;
+}
+
+.name.dragging {
+    opacity: 0.5;
+}
+
+#reset, #toggle-language {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reset:hover, #toggle-language:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#credits {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#credits a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#credits a:hover {
+    text-decoration: underline;
+}
